@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>页面未找到 | 智胜范式 · Quest Paradigm</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: '#0A0D12', surface: '#10141B', panel: '#151A22',
+          line: '#242B36', 'line-strong': '#3A4351',
+          ink: '#EDF0F4', 'ink-soft': '#C3CAD4', muted: '#8B96A6',
+          accent: '#FF6A2B', 'accent-dim': '#3A2618',
+        },
+        fontFamily: {
+          head: ['Space Grotesk', 'Noto Sans SC', 'sans-serif'],
+          mono: ['IBM Plex Mono', 'Space Grotesk', 'monospace'],
+          sans: ['Noto Sans SC', 'Inter', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-bg text-ink">
+<div class="min-h-screen flex flex-col items-center justify-center px-6">
+  <p class="tag-mark text-accent mb-4">// ERROR 404</p>
+  <h1 class="font-head text-4xl sm:text-5xl font-bold tracking-tight mb-4">页面未找到</h1>
+  <p class="text-muted text-center max-w-md mb-10 leading-relaxed">
+    您访问的页面不存在或已被移动。<br>请检查URL是否正确，或通过以下链接继续浏览。
+  </p>
+  <div class="flex flex-wrap gap-4 justify-center">
+    <a href="/" class="btn btn-primary">返回首页</a>
+    <a href="/ai/" class="btn btn-outline">智造工场</a>
+    <a href="/refine/" class="btn btn-outline">智胜现场</a>
+    <a href="/about/contact/" class="btn btn-outline">联系我们</a>
+  </div>
+</div>
+</body>
+</html>

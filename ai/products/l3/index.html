@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L3 系统版 — 企业级多智能体协同平台 | 智造工场 · 智胜范式</title>
+<meta name="description" content="L3系统版——企业级多智能体协同平台，多课题统筹管理、TWI-JM集成、企业私域知识库、多部门协同、数据分析仪表盘，构建组织级改善能力体系。">
+<link rel="canonical" href="https://www.questparadigm.com/ai/products/l3/">
+<meta property="og:title" content="L3 系统版 — 企业级多智能体协同平台 | 智胜范式">
+<meta property="og:description" content="企业级多智能体协同平台，组织级改善能力建设。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config={theme:{extend:{
+    colors:{bg:'#0A0D12',surface:'#10141B',panel:'#151A22',line:'#242B36','line-strong':'#3A4351',ink:'#EDF0F4','ink-soft':'#C3CAD4',muted:'#8B96A6',accent:'#FF6A2B','accent-dim':'#3A2618',cyan:'#4DE8D4',paper:'#F6F7F9','paper-line':'#DEE2E8','paper-ink':'#11151C',refine:'#3B82F6',talent:'#F59E0B','ai-purple':'#8B5CF6','ai-dim':'rgba(139,92,246,0.14)'},
+    fontFamily:{head:['Space Grotesk','Noto Sans SC','sans-serif'],mono:['IBM Plex Mono','Space Grotesk','monospace'],sans:['Noto Sans SC','Inter','sans-serif']}
+  }}}
+</script>
+<link rel="stylesheet" href="/assets/css/main.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"L3 系统版","description":"企业级多智能体协同平台，多课题统筹管理、TWI-JM集成、企业私域知识库，构建组织级改善能力体系。","brand":{"@type":"Organization","name":"智胜范式"},"offers":{"@type":"AggregateOffer","lowPrice":"250000","highPrice":"800000","priceCurrency":"CNY","description":"25-80万/年","availability":"https://schema.org/InStock"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://www.questparadigm.com/"},{"@type":"ListItem","position":2,"name":"智造工场","item":"https://www.questparadigm.com/ai/"},{"@type":"ListItem","position":3,"name":"L3 系统版"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"L3为什么需要私域部署？","acceptedAnswer":{"@type":"Answer","text":"L3涉及企业核心改善数据和私域知识库，私域部署确保数据安全合规，同时保证响应速度和稳定性。私域部署支持本地服务器和私有云，企业完全掌控数据主权。"}},
+{"@type":"Question","name":"L3支持多少并发课题？","acceptedAnswer":{"@type":"Answer","text":"L3支持企业级多课题并发管理，标准配置支持50+并发课题，可根据企业规模弹性扩展。每个课题独立运行L2引擎，同时共享企业知识库和协同能力。"}},
+{"@type":"Question","name":"从L2升级到L3需要什么？","acceptedAnswer":{"@type":"Answer","text":"从L2升级到L3，技术上是无缝升级——L2的课题数据和知识积累完整迁移。组织上需要指定精益总监或运营VP作为平台管理者，建立跨部门协同机制。我们提供完整的升级陪跑服务。"}}
+]}
+</script>
+</head>
+<body class="bg-bg text-ink">
+
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-bg/85 backdrop-blur border-b border-line">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2.5 font-head font-bold text-lg tracking-tight"><span class="w-2 h-2 bg-accent" style="box-shadow:0 0 10px #FF6A2B"></span><span>智胜范式</span><span class="hidden sm:inline tag-mark no-prefix text-muted ml-1">QUEST PARADIGM</span></a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-ink-soft">
+        <a href="/solutions/" class="link-underline hover:text-ink">解决方案</a>
+        <button id="mega-trigger" class="link-underline text-ink flex items-center gap-1 bg-transparent border-none cursor-pointer text-sm font-medium" aria-expanded="false" aria-haspopup="true">产品服务 <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></button>
+        <a href="/academy/" class="link-underline hover:text-ink">训练营</a><a href="/insights/" class="link-underline hover:text-ink">洞察资源</a><a href="/about/" class="link-underline hover:text-ink">关于</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-3"><a href="/ai/products/l1/" class="btn btn-primary text-sm py-2 px-4">免费体验 L1</a></div>
+      <button id="nav-toggle" aria-expanded="false" aria-label="打开导航菜单" class="lg:hidden flex items-center justify-center w-10 h-10 border border-line cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+    <div id="mega-panel" class="mega-menu"><div class="mega-menu-inner">
+      <div><a href="/refine/" class="mega-col-header refine"><span class="dot"></span>智胜现场</a><a href="/refine/glossary/" class="mega-link">精益词典</a><a href="/refine/faq/" class="mega-link">FAQ</a></div>
+      <div><a href="/ai/" class="mega-col-header ai"><span class="dot"></span>智造工场</a><a href="/ai/products/l1/" class="mega-link">L1-L4产品</a><a href="/ai/1nx-framework/" class="mega-link">1+N+X框架</a><a href="/ai/custom-services/" class="mega-link">转型诊断</a></div>
+      <div><a href="/talent/" class="mega-col-header talent"><span class="dot"></span>智胜职场</a><a href="/talent/products/opc-community/" class="mega-link">OPC社区</a><a href="/talent/career-paths/" class="mega-link">职业路径</a></div>
+    </div></div>
+    <div id="mobile-menu" class="lg:hidden max-h-0"><nav class="flex flex-col gap-2 pb-6 text-sm font-medium text-ink-soft"><a href="/solutions/" class="py-2">解决方案</a><a href="/ai/" class="py-2">产品服务</a><a href="/academy/" class="py-2">训练营</a><a href="/insights/" class="py-2">洞察资源</a><a href="/about/" class="py-2">关于</a><div class="flex gap-3 pt-2"><a href="/about/contact/" class="btn btn-outline text-sm py-2 px-4 flex-1">预约演示</a><a href="/ai/products/l1/" class="btn btn-primary text-sm py-2 px-4 flex-1">免费体验</a></div></nav></div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative pt-32 pb-20 lg:pt-44 lg:pb-28 grid-field glow-field">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+    <nav class="breadcrumb mb-6" aria-label="面包屑导航">
+      <a href="/">首页</a><span class="breadcrumb-sep">/</span><a href="/ai/">智造工场</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">L3 系统版</span>
+    </nav>
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+      <div class="lg:col-span-7">
+        <span class="level-chip mb-5"><span class="dot"></span>L3<span class="ml-2 text-xs font-mono text-muted tracking-wider">ENTERPRISE</span></span>
+        <h1 class="font-head text-4xl sm:text-5xl lg:text-[3.5rem] font-bold leading-[1.12] tracking-tight mt-5">
+          系统版 · Enterprise
+        </h1>
+        <p class="text-xl text-accent font-medium mt-3 mb-6">组织级改善能力建设</p>
+        <p class="text-lg text-muted max-w-2xl leading-relaxed">
+          不只是跑一个课题，而是建一套改善体系——多课题统筹、多部门协同、企业私域知识库沉淀、TWI-JM集成，让组织的改善能力系统化、可复制、可传承。
+        </p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="/about/contact/" class="btn btn-primary text-lg py-4 px-8">联系销售</a>
+          <a href="/about/contact/" class="btn btn-outline">预约演示</a>
+        </div>
+        <p class="mt-4 text-sm text-muted">25-80万/年 · 包含L1+L2全部能力 · 私域部署支持</p>
+      </div>
+      <div class="lg:col-span-5 hidden lg:flex items-center justify-center">
+        <div class="panel p-8 w-full max-w-sm">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="w-2 h-2 bg-accent" style="box-shadow:0 0 8px var(--accent);"></span>
+            <span class="font-mono text-sm text-muted">L3-SYSTEM // ENTERPRISE</span>
+          </div>
+          <div class="space-y-4 text-sm">
+            <div class="bg-bg border border-line p-3 rounded-sm"><p class="text-muted mb-1 font-mono text-xs">系统概览</p><p class="text-ink-soft">活跃课题 12 · 待启动 5 · 本月完成 3<br>涉及 4 个车间 · 23 位改善工程师</p></div>
+            <div class="bg-bg border border-accent/30 p-3 rounded-sm"><p class="text-accent mb-1 font-mono text-xs">L3 协同提示</p><p class="text-ink-soft">检测到车间B的「换模时间」课题与车间A已完成的类似课题高度相关，建议复用A车间的对策方案……</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 核心能力 -->
+<section class="py-20 lg:py-28 border-t border-line">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="fade-up max-w-3xl mb-14">
+      <p class="tag-mark text-accent mb-3">01 / CAPABILITIES</p>
+      <h2 class="font-head text-3xl lg:text-4xl font-bold tracking-tight">六大核心能力</h2>
+      <p class="mt-3 text-sm text-muted"><span class="text-ink font-medium">目标用户：</span>精益总监 / 运营VP——需要「建一套改善体系」的组织级管理者</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="fade-up panel corner-mark p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-accent mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        <h3 class="font-head font-bold text-lg mb-2">多课题统筹管理</h3>
+        <p class="text-sm text-muted leading-relaxed">多个QCC课题并行管理，统一看板跟踪进度，资源调配一目了然，不再逐个课题手动跟进。</p>
+      </div>
+      <div class="fade-up panel corner-mark p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-accent mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <h3 class="font-head font-bold text-lg mb-2">TWI-JM集成</h3>
+        <p class="text-sm text-muted leading-relaxed">工作改善四步法智能体深度集成，将TWI-JM方法论与QCC流程无缝融合，改善方法不再割裂。</p>
+      </div>
+      <div class="fade-up panel corner-mark p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-accent mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <h3 class="font-head font-bold text-lg mb-2">企业私域知识库</h3>
+        <p class="text-sm text-muted leading-relaxed">可写可沉淀——每一个完成的课题自动成为企业知识资产，改善经验不再随人员流动而消失。</p>
+      </div>
+      <div class="fade-up panel corner-mark p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-accent mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <h3 class="font-head font-bold text-lg mb-2">多部门协同</h3>
+        <p class="text-sm text-muted leading-relaxed">跨车间、跨工厂协同改善——A车间的成功经验自动推荐给B车间，组织智慧共享而非孤岛运行。</p>
+      </div>
+      <div class="fade-up panel corner-mark p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-accent mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+        <h3 class="font-head font-bold text-lg mb-2">数据分析仪表盘</h3>
+        <p class="text-sm text-muted leading-relaxed">改善活动全景数据可视化——课题数量、完成率、改善效果、资源投入，管理者一屏掌握全局。</p>
+      </div>
+      <div class="fade-up panel corner-mark p-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-accent mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+        <h3 class="font-head font-bold text-lg mb-2">私域部署支持</h3>
+        <p class="text-sm text-muted leading-relaxed">支持本地服务器和私有云部署，企业核心数据完全自主掌控，满足信息安全和合规要求。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 关键差异 -->
+<section class="py-20 lg:py-28 border-t border-line bg-surface">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="fade-up max-w-3xl mb-14">
+      <p class="tag-mark text-accent mb-3">02 / KEY DIFFERENTIATOR</p>
+      <h2 class="font-head text-3xl lg:text-4xl font-bold tracking-tight">从「跑一个课题」到「建一套体系」</h2>
+    </div>
+    <div class="fade-up grid lg:grid-cols-2 gap-8">
+      <div class="panel p-8">
+        <span class="level-chip mb-4 inline-flex"><span class="dot"></span>L2</span>
+        <h3 class="font-head font-bold text-xl mt-4 mb-3">课题执行引擎</h3>
+        <p class="text-muted leading-relaxed">完整跑通一个QCC课题——从数据录入到成果标准化，全流程AI辅助。单课题维度的效率工具。</p>
+        <p class="mt-4 text-sm text-ink-soft font-medium">解决「跑一个课题」的问题</p>
+      </div>
+      <div class="panel p-8 border-accent/40" style="box-shadow:0 0 20px rgba(255,106,43,0.08);">
+        <span class="level-chip mb-4 inline-flex"><span class="dot"></span>L3</span>
+        <h3 class="font-head font-bold text-xl mt-4 mb-3">多智能体协同平台</h3>
+        <p class="text-muted leading-relaxed">多课题统筹、多部门协同、知识沉淀、体系建设——从个人工具升级为组织平台，改善能力属于组织而非个人。</p>
+        <p class="mt-4 text-sm text-accent font-medium">解决「建一套改善体系」的问题</p>
+      </div>
+    </div>
+    <div class="fade-up mt-8 border-l-2 border-accent pl-5">
+      <p class="text-sm text-ink-soft leading-relaxed">
+        <span class="font-semibold text-ink">包含关系：</span>L3包含L1+L2的全部能力。每个课题仍然运行L2引擎，每位参与者仍然可以使用L1知识助手。L3在此之上增加了组织级的统筹、协同和知识沉淀能力。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 信任信号 -->
+<section class="py-16 lg:py-20 border-t border-line">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="stat-bar py-4">
+      <div class="stat-bar-item"><div class="stat-bar-num">50<span class="text-lg">+</span></div><div class="stat-bar-label">并发课题支持</div></div>
+      <div class="stat-bar-item"><div class="stat-bar-num">多</div><div class="stat-bar-label">车间/工厂协同</div></div>
+      <div class="stat-bar-item"><div class="stat-bar-num">TWI</div><div class="stat-bar-label">JM智能体集成</div></div>
+      <div class="stat-bar-item"><div class="stat-bar-num">25-80<span class="text-lg">万</span></div><div class="stat-bar-label">年订阅费用</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-20 lg:py-28 border-t border-line bg-surface">
+  <div class="max-w-3xl mx-auto px-6 lg:px-8">
+    <div class="fade-up mb-12">
+      <p class="tag-mark text-accent mb-3">03 / FAQ</p>
+      <h2 class="font-head text-3xl lg:text-4xl font-bold tracking-tight">常见问题</h2>
+    </div>
+    <div class="fade-up">
+      <details class="faq-item">
+        <summary>L3为什么需要私域部署？<svg xmlns="http://www.w3.org/2000/svg" class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-answer">L3涉及企业核心改善数据和私域知识库，包含工艺参数、不良率数据、改善对策等敏感信息。私域部署确保数据安全合规，同时保证响应速度和系统稳定性。支持本地服务器和私有云部署，企业完全掌控数据主权。</div>
+      </details>
+      <details class="faq-item">
+        <summary>L3支持多少并发课题？<svg xmlns="http://www.w3.org/2000/svg" class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-answer">L3支持企业级多课题并发管理，标准配置支持50+并发课题，可根据企业规模弹性扩展。每个课题独立运行L2引擎，同时共享企业知识库和协同能力。大型集团企业可通过多工厂部署支持更大规模的并发需求。</div>
+      </details>
+      <details class="faq-item">
+        <summary>从L2升级到L3需要什么？<svg xmlns="http://www.w3.org/2000/svg" class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="faq-answer">从L2升级到L3，技术上是无缝升级——L2的课题数据和知识积累完整迁移到L3平台。组织上需要指定精益总监或运营VP作为平台管理者，建立跨部门的改善协同机制。我们提供完整的升级陪跑服务，包括平台部署、人员培训和运营辅导。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 底部CTA -->
+<section class="py-20 lg:py-28 border-t border-line grid-field glow-field">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center relative">
+    <p class="tag-mark text-accent mb-3">ENTERPRISE</p>
+    <h2 class="fade-up font-head text-3xl lg:text-5xl font-bold tracking-tight max-w-3xl mx-auto leading-tight">
+      从个人效率工具<br>到组织改善平台
+    </h2>
+    <p class="fade-up mt-6 text-muted max-w-xl mx-auto leading-relaxed">
+      让改善能力属于组织，而非个人。联系我们，了解L3如何帮助你的企业建立系统化的改善能力体系。
+    </p>
+    <div class="fade-up mt-10 flex flex-wrap justify-center gap-4">
+      <a href="/about/contact/" class="btn btn-primary text-lg py-4 px-8">联系销售</a>
+      <a href="/about/contact/" class="btn btn-outline">预约演示</a>
+      <a href="/ai/products/l4/" class="btn btn-outline">了解L4 经营版</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-14 border-t border-line">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-6 gap-10">
+      <div class="lg:col-span-1"><div class="flex items-center gap-2.5 font-head font-bold text-lg mb-3"><span class="w-2 h-2 bg-accent" style="box-shadow:0 0 10px #FF6A2B"></span><span>智胜范式</span></div><p class="text-xs text-muted">重庆智胜现场科技有限公司</p></div>
+      <div><p class="tag-mark text-muted mb-4">产品</p><ul class="space-y-2 text-sm text-ink-soft"><li><a href="/ai/products/l1/" class="link-underline">L1 助手版</a></li><li><a href="/ai/products/l2/" class="link-underline">L2 课题版</a></li><li><a href="/ai/products/l3/" class="link-underline">L3 系统版</a></li><li><a href="/ai/products/l4/" class="link-underline">L4 经营版</a></li></ul></div>
+      <div><p class="tag-mark text-muted mb-4">服务</p><ul class="space-y-2 text-sm text-ink-soft"><li><a href="/ai/custom-services/" class="link-underline">转型诊断</a></li><li><a href="/ai/1nx-framework/" class="link-underline">1+N+X落地</a></li><li><a href="/refine/" class="link-underline">精益咨询</a></li><li><a href="/talent/products/corporate-training/" class="link-underline">企业内训</a></li></ul></div>
+      <div><p class="tag-mark text-muted mb-4">学习</p><ul class="space-y-2 text-sm text-ink-soft"><li><a href="/academy/" class="link-underline">训练营</a></li><li><a href="/refine/glossary/" class="link-underline">精益词典</a></li><li><a href="/talent/career-paths/" class="link-underline">职业路径</a></li><li><a href="/insights/" class="link-underline">洞察资源</a></li></ul></div>
+      <div><p class="tag-mark text-muted mb-4">公司</p><ul class="space-y-2 text-sm text-ink-soft"><li><a href="/about/" class="link-underline">关于我们</a></li><li><a href="/about/team/yang-renqin/" class="link-underline">团队</a></li><li><a href="/about/partners/" class="link-underline">合作伙伴</a></li><li><a href="/about/contact/" class="link-underline">联系我们</a></li></ul></div>
+      <div><p class="tag-mark text-muted mb-4">法律</p><ul class="space-y-2 text-sm text-ink-soft"><li><a href="/legal/privacy/" class="link-underline">隐私政策</a></li><li><a href="/legal/terms/" class="link-underline">服务条款</a></li></ul></div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-line text-xs text-muted font-mono">&copy; 2026 重庆智胜现场科技有限公司 · 渝ICP备XXXXXXXX号</div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

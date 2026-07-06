@@ -1,0 +1,37 @@
+# 智胜范式 Quest Paradigm - robots.txt
+# V3 SEO/GEO策略：允许国内搜索引擎和AI搜索平台爬虫
+
+User-agent: *
+Allow: /
+
+# 国内搜索引擎（必须Allow）
+User-agent: Baiduspider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# 国际搜索（Kimi依赖Bing索引）
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# AI训练爬虫（按策略决定）
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+Sitemap: https://www.questparadigm.com/sitemap.xml
