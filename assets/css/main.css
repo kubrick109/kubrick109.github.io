@@ -228,6 +228,11 @@ h1,h2,h3,h4,.font-head{
 }
 .line-flow{ stroke-dasharray: 4 6; animation: dash-flow 3s linear infinite; }
 
+/* ---------- 首页转型飞轮 ---------- */
+@keyframes fw-spin{ to{ transform: rotate(360deg); } }
+.fw-rotate{ transform-box: view-box; transform-origin: 50% 50%; animation: fw-spin 48s linear infinite; }
+.fw-rotate-rev{ transform-box: view-box; transform-origin: 50% 50%; animation: fw-spin 80s linear infinite reverse; }
+
 /* ---------- 滚动淡入 ---------- */
 .fade-up{ opacity: 0; transform: translateY(16px); transition: opacity 600ms ease, transform 600ms ease; }
 .fade-up.is-visible{ opacity: 1; transform: translateY(0); }
@@ -235,7 +240,7 @@ h1,h2,h3,h4,.font-head{
 @media (prefers-reduced-motion: reduce){
   .fade-up{ opacity:1; transform:none; transition:none; }
   .panel:hover, .panel-light:hover{ transform:none; }
-  .node-pulse, .line-flow{ animation:none; }
+  .node-pulse, .line-flow, .fw-rotate, .fw-rotate-rev{ animation:none; }
   .intro-overlay{ display:none; }
   .hero-reveal{ opacity:1; transform:none; transition:none; }
 }
