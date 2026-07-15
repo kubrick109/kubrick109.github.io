@@ -392,6 +392,9 @@ a.mega-col-header:hover{ opacity: 0.75; }
 .division-badge.ai{
   color: var(--ai-purple); border-color: var(--ai-purple-line); background: var(--ai-purple-dim);
 }
+.division-badge.reports{
+  color: var(--cyan); border-color: rgba(77,232,212,0.35); background: var(--cyan-dim);
+}
 .division-badge .dot{
   width: 5px; height: 5px; background: currentColor;
   box-shadow: 0 0 6px currentColor;
