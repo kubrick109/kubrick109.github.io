@@ -18,13 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let hideTimer = null;
     const show = () => { clearTimeout(hideTimer); megaPanel.classList.add('is-open'); megaTrigger.setAttribute('aria-expanded', 'true'); };
     const hide = () => { hideTimer = setTimeout(() => { megaPanel.classList.remove('is-open'); megaTrigger.setAttribute('aria-expanded', 'false'); }, 120); };
-    megaTrigger.addEventListener('mouseenter', show);
-    megaTrigger.addEventListener('mouseleave', hide);
-    megaPanel.addEventListener('mouseenter', () => clearTimeout(hideTimer));
-    megaPanel.addEventListener('mouseleave', hide);
+    const supportsHover = window.matchMedia('(hover: hover)').matches;
+    if (supportsHover) {
+      megaTrigger.addEventListener('mouseenter', show);
+      megaTrigger.addEventListener('mouseleave', hide);
+      megaPanel.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+      megaPanel.addEventListener('mouseleave', hide);
+    }
     megaTrigger.addEventListener('click', (e) => {
       e.preventDefault();
-      megaPanel.classList.toggle('is-open');
+      const isOpen = megaPanel.classList.contains('is-open');
+      if (!isOpen) { show(); return; }
+      // already open: on hover-capable devices that was hover's doing, so a click shouldn't force it shut
+      // (that mismatch was the original bug); on touch/no-hover devices, a second tap closes it
+      if (!supportsHover) { clearTimeout(hideTimer); megaPanel.classList.remove('is-open'); megaTrigger.setAttribute('aria-expanded', 'false'); }
     });
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && megaPanel.classList.contains('is-open')) {
