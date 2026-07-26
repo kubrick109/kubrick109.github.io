@@ -330,6 +330,10 @@ a.mega-col-header:hover{ opacity: 0.75; }
 .mega-col-header .dot{
   width: 6px; height: 6px; flex-shrink: 0;
 }
+.mega-col-sub{
+  font-family: var(--font-mono); font-weight: 500; font-size: 0.7rem;
+  color: var(--muted); margin-left: auto; letter-spacing: 0.02em;
+}
 .mega-col-header.refine .dot{ background: var(--refine); box-shadow: 0 0 6px var(--refine); }
 .mega-col-header.talent .dot{ background: var(--talent); box-shadow: 0 0 6px var(--talent); }
 .mega-col-header.ai .dot{ background: var(--ai-purple); box-shadow: 0 0 6px var(--ai-purple); }
